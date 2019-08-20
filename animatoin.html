@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+        #box1
+        {
+            height: 200px;
+            width: 200px;
+            position:relative;
+            background: #CCC150;
+        }
+        #box2{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            -webkit-animation:translate(-50%,-50%);
+            background: #ff0000;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box1">
+    <div id="box2">hhh</div>
+</div>
+<script>
+    function getNum(arr,total){
+        if (arr.length == 0){
+            return none;
+        }
+        for (i=0;i<arr.length;i++){
+            for (j=0;j<arr.length;j++){
+                if (arr[i]+arr[j] == total){
+                    return [arr[i],arr[j]];
+                }
+            }
+        }
+    }
+arr = [1,2,3,4,5];
+outcome = getNum(arr,);
+console.log(outcome);
+console.log('Hello World!');
+</script>
+</body>
+</html>
